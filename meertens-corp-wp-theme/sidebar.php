@@ -12,8 +12,8 @@
           'echo' => false,
           'depth'=> 2,
         ) );
-        //echo strip_tags($cleanMenu, "<a>");
-        echo $cleanMenu;
+        echo strip_tags($cleanMenu, "<a><ul><li>");
+        //echo $cleanMenu;
 
       ?>
     </nav>
@@ -23,3 +23,11 @@
 
   </div>
 </aside>
+
+<div class="mSubNavLayer" id="subnav">
+  <div class="mSubNav mLineLeft paddingSite">
+    <div><button type="button" name="button" onclick="hideSubnav()">close</button></div>
+    <nav class="mMainNavgation mSubNavInner" id="subnavInner"></nav>
+    <div></div>
+  </div>
+</div>
