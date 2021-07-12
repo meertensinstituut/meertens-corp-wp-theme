@@ -9,15 +9,6 @@
 
 
 
- function wpb_custom_new_menu() {
-	 register_nav_menu('mainMenu',__( 'Hoofdmenu' )); 
- }
- add_action( 'init', 'wpb_custom_new_menu' );
-
-
-
-
-
 if ( ! function_exists( 'gutenbergtheme_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -188,6 +179,30 @@ function gutenbergtheme_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'gutenbergtheme_scripts' );
 
+/**
+ * Implement the Custom Header feature.
+ */
+require get_template_directory() . '/inc/custom-header.php';
+
+/**
+ * Custom template tags for this theme.
+ */
+require get_template_directory() . '/inc/template-tags.php';
+
+/**
+ * Functions which enhance the theme by hooking into WordPress.
+ */
+require get_template_directory() . '/inc/template-functions.php';
+
+/**
+ * Customizer additions.
+ */
+require get_template_directory() . '/inc/customizer.php';
+
+/**
+ * Customizer additions HUC.
+ */
+require get_template_directory() . '/inc/huc-customizer.php';
 
 
 
@@ -197,4 +212,3 @@ add_action( 'wp_enqueue_scripts', 'gutenbergtheme_scripts' );
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-?>

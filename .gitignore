@@ -3,3 +3,4 @@ node_modules/
 twentytwentyone/
 .ftpconfig
 index.php
+!meertens-corp-wp-theme/index.php
