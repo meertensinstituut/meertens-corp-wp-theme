@@ -15,7 +15,7 @@
 
     <div class="homeBlok-high paddingSite mLineLeft" id="uitgelicht">
       <h2>Uitgelicht</h2>
-      <?php query_posts( 'category_name=collecties&posts_per_page=2' ); ?>
+      <?php query_posts( 'category_name=collecties&posts_per_page=3' ); ?>
       <?php while ( have_posts() ) : the_post(); ?>
         <?php get_template_part( 'template-parts/content', 'card01' ); ?>
       <?php endwhile; ?>
@@ -23,7 +23,7 @@
 
 
         <h2>Agenda</h2>
-        <?php query_posts( 'category_name=onderzoek&posts_per_page=2' ); ?>
+        <?php query_posts( 'category_name=onderzoek&posts_per_page=3' ); ?>
         <?php while ( have_posts() ) : the_post(); ?>
           <?php get_template_part( 'template-parts/content', 'card01' ); ?>
         <?php endwhile; ?>
@@ -33,14 +33,14 @@
     <div class="mCardsColumn paddingSite mLineLeft" id="nieuws">
 
         <h2>Nieuws</h2>
-        <?php query_posts( 'category_name=collecties&posts_per_page=2' ); ?>
+        <?php query_posts( 'category_name=— — — 2021&posts_per_page=3' ); ?>
         <?php while ( have_posts() ) : the_post(); ?>
           <?php get_template_part( 'template-parts/content', 'card01' ); ?>
         <?php endwhile; ?>
 
 
         <h2>Media</h2>
-        <?php query_posts( 'category_name=collecties&posts_per_page=2' ); ?>
+        <?php query_posts( 'category_name=collecties&posts_per_page=3' ); ?>
         <?php while ( have_posts() ) : the_post(); ?>
           <?php get_template_part( 'template-parts/content', 'card01' ); ?>
         <?php endwhile; ?>
@@ -50,13 +50,13 @@
     <div class="mCardsColumn paddingSite mLineLeft" id="databanken">
 
         <h2>Databanken</h2>
-        <?php query_posts( 'category_name=collecties&posts_per_page=2' ); ?>
+        <?php query_posts( 'category_name=— Databanken&posts_per_page=3' ); ?>
         <?php while ( have_posts() ) : the_post(); ?>
           <?php get_template_part( 'template-parts/content', 'card01' ); ?>
         <?php endwhile; ?>
 
         <h2>Publicaties</h2>
-        <?php query_posts( 'category_name=collecties&posts_per_page=2' ); ?>
+        <?php query_posts( 'category_name=Publicaties&posts_per_page=3' ); ?>
         <?php while ( have_posts() ) : the_post(); ?>
           <?php get_template_part( 'template-parts/content', 'card01' ); ?>
         <?php endwhile; ?>
