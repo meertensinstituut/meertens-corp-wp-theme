@@ -9,6 +9,7 @@
     <nav class="mMainNavgation mMarginBottom">
       <?php
         $cleanMenu = wp_nav_menu( array(
+          //'menu_id' => 'my-custom-menu',
           'echo' => false,
           'depth'=> 2,
         ) );

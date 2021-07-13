@@ -1,23 +1,36 @@
-<?php
-get_header();
-?>
-
-<main id="primary" class="site-main">
-
-	<?php
-	while ( have_posts() ) : the_post();
-
-		get_template_part( 'template-parts/content', 'page' );
-		$type = get_post_meta($post->ID, 'show_list_of', true);
-		$idd = $post->ID;
 
 
-	endwhile; // End of the loop.
+<?php get_header(); ?>
+<?php get_sidebar(); ?>
 
-	?>
 
-</main><!-- #primary -->
 
-<?php
 
-get_footer();
+<main id="main">
+
+  <div class="mlayout">
+    <h1 class="mPageTitle"><?php the_title(); ?></h1>
+    <div class="mPageContent">
+      <?php
+      if (have_posts()) :
+          while (have_posts()) : the_post();
+              ?>
+              <?php the_content(); ?>
+
+              <?php
+          endwhile;
+      else :
+      ?>
+          <h2>No Posts Found</h2>
+          <p>Sorry, there are no posts yet.</p>
+      <?php
+      endif;
+      ?>
+
+    </div>
+  </div>
+
+</main>
+
+
+<?php get_footer(); ?>
