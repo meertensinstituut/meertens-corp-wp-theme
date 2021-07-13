@@ -329,6 +329,9 @@ h1 {
   margin-right: calc(0px - 3rem);
   border-bottom: 2px dotted #d6112f;
 }
+.mCardHome img {
+  display: none;
+}
 
 body {
   margin: 0;
