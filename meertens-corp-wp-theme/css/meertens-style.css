@@ -113,6 +113,10 @@
   grid-column: colStart/colEnd;
   grid-row: ContentStart/gutter2;
 }
+.mPageContent img {
+  width: 100%;
+  height: auto;
+}
 
 .mLineLeft {
   border-right: 1px solid #d6112f;
