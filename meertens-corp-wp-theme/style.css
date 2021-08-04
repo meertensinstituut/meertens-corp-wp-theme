@@ -8,3 +8,17 @@ License: GNU General Public License v2 or later
 License URI: LICENSE
 
 */
+
+
+.tag{
+  background-color: hsl(102, 0%, 95%);
+  margin-right: 15px;
+}
+
+
+.mHomeBlock {
+  width: 100%;
+  padding: 1.5rem;
+  margin: 0 -1.5rem;
+  background-color: hsl(102, 0%, 95%);
+}

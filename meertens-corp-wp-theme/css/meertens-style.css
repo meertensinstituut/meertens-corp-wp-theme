@@ -94,7 +94,7 @@
     justify-content: start;
     align-items: start;
     grid-template-columns: [left1] 1fr [gutterL] 3rem [colStart] minmax(300px, 700px) [colEnd] 3rem [gutterR] 1fr [right1];
-    grid-template-rows: [top1] 6rem [headerStart] auto [gutter1] 3rem [ContentStart] auto [gutter2] 3rem [footer] 400px [bottom1];
+    grid-template-rows: [top1] 6rem [headerStart] auto [gutter1] 3rem [ContentStart] auto [ItemsStart] auto [gutter2] 3rem [footer] 400px [bottom1];
   }
 }
 @media (min-width: 800px) {
@@ -111,11 +111,16 @@
 
 .mPageContent {
   grid-column: colStart/colEnd;
-  grid-row: ContentStart/gutter2;
+  grid-row: ContentStart/ItemsStart;
 }
 .mPageContent img {
   width: 100%;
   height: auto;
+}
+
+.mPageItems {
+  grid-column: colStart/colEnd;
+  grid-row: ItemsStart/gutter2;
 }
 
 .mLineLeft {

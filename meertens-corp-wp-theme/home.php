@@ -14,21 +14,30 @@
     </div>
 
     <div class="homeBlok-high paddingSite mLineLeft" id="uitgelicht">
-      <h2>Uitgelicht</h2>
-      <?php query_posts( 'category_name=collecties&posts_per_page=3' ); ?>
+
+      <br>
+      <br>
+      <br>
+      <div class="mHomeBlock">
+        <strong>Onderzoeksprojecten</strong> <br>
+        <a href="#">Bekijk hier een overzicht van onze Onderzoeksprojecten</a>
+      </div>
+
+      <h2>Agenda</h2>
+      <?php query_posts( 'category_name=onderzoek&posts_per_page=3' ); ?>
       <?php while ( have_posts() ) : the_post(); ?>
         <?php get_template_part( 'template-parts/content', 'card01' ); ?>
       <?php endwhile; ?>
 
 
-
-        <h2>Agenda</h2>
-        <?php query_posts( 'category_name=onderzoek&posts_per_page=3' ); ?>
-        <?php while ( have_posts() ) : the_post(); ?>
-          <?php get_template_part( 'template-parts/content', 'card01' ); ?>
-        <?php endwhile; ?>
-
     </div>
+
+
+
+
+
+
+
 
     <div class="mCardsColumn paddingSite mLineLeft" id="nieuws">
 
@@ -47,21 +56,27 @@
 
     </div>
 
+
+
+
+
+
+
+
+
     <div class="mCardsColumn paddingSite mLineLeft" id="databanken">
-
-        <h2>Databanken</h2>
-        <?php query_posts( 'category_name=— Databanken&posts_per_page=3' ); ?>
-        <?php while ( have_posts() ) : the_post(); ?>
-          <?php get_template_part( 'template-parts/content', 'card01' ); ?>
-        <?php endwhile; ?>
-
-        <h2>Publicaties</h2>
-        <?php query_posts( 'category_name=Publicaties&posts_per_page=3' ); ?>
-        <?php while ( have_posts() ) : the_post(); ?>
-          <?php get_template_part( 'template-parts/content', 'card01' ); ?>
-        <?php endwhile; ?>
-
+      <h2>Uitgelicht</h2>
+      <?php query_posts( 'category_name=collecties&posts_per_page=7' ); ?>
+      <?php while ( have_posts() ) : the_post(); ?>
+        <?php get_template_part( 'template-parts/content', 'card01' ); ?>
+      <?php endwhile; ?>
     </div>
+
+
+
+
+
+
   </div>
 
 </main>
