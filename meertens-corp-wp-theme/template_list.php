@@ -35,7 +35,7 @@
 
 
 
-    <main class="mLineLeft mDoubleCol" id="list1">
+    <main class="mLineLeft mDoubleCol mCardsVolg" id="list1">
 
 
       <?php
@@ -57,8 +57,7 @@
         <?php while ( $loop->have_posts() ) : $loop->the_post( get_the_ID() )?>
 
 
-          <div class="mCardHome">
-          	<div style="font-size:.8rem; color:#666;"><?php echo get_the_date('d-m-Y'); ?></div>
+          <div class="mCardHome mLineLeft">
           	<div><strong><?php the_title(); ?></strong></div>
           	<div><a href="<?php the_permalink(); ?>">Read more</a></div>
             <div class=""><?php

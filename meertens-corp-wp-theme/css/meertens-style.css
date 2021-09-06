@@ -475,6 +475,17 @@ h1 {
   display: none;
 }
 
+.mCardsVolg {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 500px) {
+  .mCardsVolg {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+  }
+}
 body {
   margin: 0;
   padding: 0;
