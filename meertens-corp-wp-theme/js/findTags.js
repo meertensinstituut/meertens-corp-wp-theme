@@ -60,7 +60,7 @@ let createTageButtons = function (idOfResultList) {
 
   // create buttons
   let output = 'Filter op ';
-  uniqueTags.forEach(item => output+= '<button onclick="findInList(\''+item+'\', \''+idOfResultList+'\')">'+item+'</button>');
+  uniqueTags.forEach(item => output+= '<button onclick="findInList(\''+item+'\', \''+idOfResultList+'\')">'+item+'</button><br>');
   output+= '<button type="button" name="button" onclick="clearList(\''+idOfResultList+'\')">Alle resultaten</button>';
   document.getElementById('filteronList').innerHTML =  output;
 }

@@ -5,36 +5,37 @@
 
 
 
+<div id="main">
 
-<main id="main">
+  <div class="mlayout3col mFlexConditional">
 
-  <div class="mlayout">
-    <h1 class="mPageTitle"><?php the_title(); ?></h1>
-    <div class="mPageContent">
+    <div class="mBorderUnder mLineLeft mAlignMiddle mCollHeaderBar" >
+      <h1 ><?php the_title(); ?></h1>
       <?php
       if (have_posts()) :
-            while (have_posts()) : the_post(); ?>
-
-            	<?php the_content() ?><br>
-              <?php
+          while (have_posts()) : the_post();
               $listCategory = get_post_custom_values($key = 'list_category');
               $chosenCategory = $listCategory[0];
+
               ?>
+              <?php the_content(); ?>
+
+              <?php
+          endwhile;
+      else :
+      ?>
+          <h2>No Posts Found</h2>
+          <p>Sorry, there are no posts yet.</p>
+      <?php
+      endif;
+      ?>
+    </div>
 
 
-        <?php endwhile; ?>
-
-      <?php endif; ?>
-
-      </div>
 
 
 
-
-
-
-      <div class="mPageItems">
-
+    <main class="mLineLeft mDoubleCol">
 
 
       <?php
@@ -51,47 +52,44 @@
 
 
       if ( $loop->have_posts() ):   ?>
-      <div id="filteronList">  </div>
-        <ol id="list1">
+
+
         <?php while ( $loop->have_posts() ) : $loop->the_post( get_the_ID() )?>
 
-        <li>
-          <?php the_title(); ?><br>
-          <?php the_date('d M Y'); ?><br>
-          <?php
-          $post_categories = get_the_category();
-          $cats = array();
 
-
-          foreach($post_categories as $c){
-              $cat = get_category( $c );
-              $cats[] = array( 'name' => $cat->name, 'slug' => $cat->slug );
-              echo '<span class="tag">'.$cat->name.'</span>';
-
-          }
-
-
-
-
-
-            ?>
-        </li>
+          <div class="mCardHome">
+          	<div style="font-size:.8rem; color:#666;"><?php echo get_the_date('d-m-Y'); ?></div>
+          	<div><strong><?php the_title(); ?></strong></div>
+          	<div><a href="<?php the_permalink(); ?>">Read more</a></div>
+            <div class=""><?php
+                      $post_categories = get_the_category();
+                      $cats = array();
+                      foreach($post_categories as $c){
+                          $cat = get_category( $c );
+                          $cats[] = array( 'name' => $cat->name, 'slug' => $cat->slug );
+                          echo '<span class="tag mTextSmall">'.$cat->name.'</span>';
+                      }
+              ?>
+            </div>
+          </div>
 
         <?php endwhile; ?>
-        </ol>
-
-
         <?php endif; ?>
 
 
+    </main>
 
+    <div class="mLineLeft paddingSite mRightAside mAlignTopBottom mBgGrey">
 
-
+      <div class="mTextBlock mTextSmall mMarginPageTop"  id="filteronList"></div>
+      <div>Share</div>
 
     </div>
-  </div>
 
-</main>
+  </div>
+</div>
+
+
 
 <script src="<?php bloginfo('template_url'); ?>/js/findTags.js" charset="utf-8"></script>
 <?php get_footer(); ?>
