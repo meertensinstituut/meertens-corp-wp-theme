@@ -6,31 +6,48 @@
 
 
 
-<main id="main">
+<div id="main">
 
-  <div class="mlayout">
-    <h1 class="mPageTitle"><?php the_title(); ?></h1>
-    <div class="mPageContent">
-      <?php
-      if (have_posts()) :
-          while (have_posts()) : the_post();
-              ?>
-              <?php the_content(); ?>
+  <div class="mlayout3col mFlexConditional">
+    <main class="mLineLeft mDoubleCol mAlignCenter paddingSite">
+      {{> custom/meertens/breadcrumb}}
+      <div class="mTextBlock">
+        <h1 ><?php the_title(); ?></h1>
+        <?php
+        if (have_posts()) :
+            while (have_posts()) : the_post();
+                ?>
+                <?php the_content(); ?>
 
-              <?php
-          endwhile;
-      else :
-      ?>
-          <h2>No Posts Found</h2>
-          <p>Sorry, there are no posts yet.</p>
-      <?php
-      endif;
-      ?>
+                <?php
+            endwhile;
+        else :
+        ?>
+            <h2>No Posts Found</h2>
+            <p>Sorry, there are no posts yet.</p>
+        <?php
+        endif;
+        ?>
+      </div>
+
+    </main>
+
+
+    <div class="mLineLeft paddingSite mRightAside mAlignTopBottom mBgGrey">
+
+      <div class="mTextBlock mTextSmall mTextGrey mMarginPageTop">Published 12-12-2021</div>
+      <div>Share</div>
 
     </div>
-  </div>
 
-</main>
+
+
+
+</div>
+
+
+
+</div>
 
 
 <?php get_footer(); ?>
