@@ -14,7 +14,8 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-	<title><?php the_title();?></title>
+	<title>Meertens Test</title>
+	<!-- <title><?php //the_title();?></title> -->
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="images/meertens/favicon.png">
