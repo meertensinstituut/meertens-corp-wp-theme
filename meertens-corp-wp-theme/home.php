@@ -15,7 +15,7 @@
 
     <div class="mCardsColumn mLineLeft" id="colA">
       <h2 class="mhomeColHeader mhomeColHeaderGreen paddingSite">Uitgelicht</h2>
-      <?php query_posts( 'category_name=uitgelicht&posts_per_page=3' ); ?>
+      <?php query_posts( 'category_name=uitgelicht&posts_per_page=6' ); ?>
       <?php while ( have_posts() ) : the_post(); ?>
         <?php get_template_part( 'template-parts/content', 'card01' ); ?>
       <?php endwhile; ?>
