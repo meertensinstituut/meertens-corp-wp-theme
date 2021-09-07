@@ -48,7 +48,7 @@
 
 
         <h2 class="mhomeColHeader paddingSite">Agenda</h2>
-        <?php query_posts( 'category_name=onderzoek&posts_per_page=3' ); ?>
+        <?php query_posts( 'category_name=agenda&posts_per_page=3' ); ?>
         <?php while ( have_posts() ) : the_post(); ?>
           <?php get_template_part( 'template-parts/content', 'card01' ); ?>
         <?php endwhile; ?>
