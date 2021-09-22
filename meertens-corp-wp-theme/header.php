@@ -18,7 +18,7 @@
 	<!-- <title><?php //the_title();?></title> -->
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" href="images/meertens/favicon.png">
+	<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/images/favicon.png">
 
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/meertens-style.css">
