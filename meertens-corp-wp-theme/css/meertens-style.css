@@ -264,6 +264,12 @@ a {
 .mHomeAboutBox {
   background-color: #d82443;
   color: #fff;
+  background-size: cover;
+  background-image: url("../images/meertens/home-table-hero.png");
+  background-blend-mode: multiply;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 150%;
 }
 
 .mTextBlock {
@@ -471,8 +477,13 @@ h1 {
   padding-right: 3rem;
   border-bottom: 2px dotted #d82443;
 }
-.mCardHome img {
-  display: none;
+
+.mCard {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border-bottom: 2px dotted #d82443;
 }
 
 .mCardsVolg {
@@ -486,6 +497,45 @@ h1 {
     grid-template-columns: repeat(2, minmax(300px, 1fr));
   }
 }
+.mCardsSimpleThumb {
+  display: flex;
+  flex-direction: column;
+}
+
+.mCards__thumbnailSmall img, .mCards__thumbnailBig img {
+  width: 100%;
+  height: auto;
+}
+
+.mCards__thumbnailBig {
+  margin-top: -3rem;
+  margin-left: -3rem;
+  margin-right: -3rem;
+  margin-bottom: 1.5rem;
+}
+.mCards__thumbnailBig img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 500px) {
+  .mCardsSimpleThumb {
+    display: flex;
+    flex-direction: row;
+    padding-left: 1.5rem;
+  }
+
+  .mCards__thumbnailSmall {
+    margin-right: 1.5rem;
+  }
+  .mCards__thumbnailSmall img {
+    width: 75px;
+  }
+}
+.mNoImg img {
+  display: none;
+}
+
 body {
   margin: 0;
   padding: 0;
