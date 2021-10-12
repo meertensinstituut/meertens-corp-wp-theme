@@ -1,5 +1,4 @@
-
-
+<?php include 'php.php'; ?>
 <?php get_header(); ?>
 <?php get_sidebar(); ?>
 
@@ -10,7 +9,9 @@
 
   <div class="mlayout3col mFlexConditional">
     <main class="mLineLeft mDoubleCol mAlignCenter paddingSite">
-      {{> custom/meertens/breadcrumb}}
+      <div class="mTextBlock mTextSmall mTextGrey mMarginPageTop mMarginBasicBottom">
+        <a href="/">Home</a> /
+      </div>
       <div class="mTextBlock">
         <h1 ><?php the_title(); ?></h1>
         <?php
@@ -33,9 +34,9 @@
     </main>
 
 
-    <div class="mLineLeft paddingSite mRightAside mAlignTopBottom mBgGrey">
+    <div class="mLineLeft paddingSite mRightAside mAlignTopBottom ">
 
-      <div class="mTextBlock mTextSmall mTextGrey mMarginPageTop">Published 12-12-2021</div>
+      <div class="mTextBlock mTextSmall mTextGrey mMarginPageTop"><?php transl( 'Gepubliceerd op', 'Published 0n') ?> 12-12-2021</div>
       <div>Share</div>
 
     </div>

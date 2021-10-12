@@ -11,6 +11,12 @@
 
 
 ?>
+<?php
+$bodyClass='';
+if ( is_user_logged_in() ) {
+    $bodyClass = 'mLoggedin';
+	}
+?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -24,7 +30,7 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/meertens-style.css">
 
 </head>
-<body>
+<body class="<?php echo $bodyClass ?>">
 
 	<div class="screenReaderMenu">
     <a href="#main">skip to main content</a>

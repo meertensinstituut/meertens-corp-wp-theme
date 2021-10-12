@@ -9,6 +9,7 @@ function findInList(stringToFind, idOfResultList) {
   let elements2Filter = document.querySelectorAll('#'+idOfResultList+' > *')
 
 
+
   // Loop through all list items, and hide those who don't match the search query
   for (i = 0; i < elements2Filter.length; i++) {
     let showItems = false;
@@ -60,8 +61,21 @@ let createTageButtons = function (idOfResultList) {
 
   // create buttons
   let output = 'Filter op <br>';
-  uniqueTags.forEach(item => output+= '<button class="mButtonClean onclick="findInList(\''+item+'\', \''+idOfResultList+'\')">'+item+'</button><br>');
+  uniqueTags.forEach(item => output+= '<button class="mButtonClean" onclick="findInList(\''+item+'\', \''+idOfResultList+'\')">'+item+'</button><br>');
   output+= '<br><button type="button" name="button" onclick="clearList(\''+idOfResultList+'\')"">Alle resultaten</button>';
   document.getElementById('filteronList').innerHTML =  output;
 }
+
 createTageButtons('list1');
+
+
+// Bind function to onclick event for checkbox
+document.getElementById('langSwitch').onchange = function() {
+    // access properties using this keyword
+    if ( this.checked ) {
+        window.location.href = '/en';
+
+    } else {
+        window.location.href = '/';
+    }
+};

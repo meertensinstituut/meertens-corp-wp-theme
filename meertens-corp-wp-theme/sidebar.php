@@ -20,7 +20,14 @@
     </nav>
 
 
-    <div>NL - ENG</div>
+    <div>
+      <label class="switch">
+         <span class="mSwitchLabel">ENG</span>
+        <input type="checkbox" id="langSwitch">
+        <span class="slider round"></span>
+      </label>
+
+    </div>
 
   </div>
 </aside>
