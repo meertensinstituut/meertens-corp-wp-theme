@@ -276,6 +276,11 @@ a {
   max-width: 700px;
   width: 100%;
 }
+.mTextBlock img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
 
 .mTextSmall {
   font-size: 15px;
