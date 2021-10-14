@@ -7,5 +7,11 @@ function transl( $nl, $eng){
   echo $out ;
 }
 
+function removeEngStr($str) {
+  $newstr = str_replace("_eng_", "", $str);
+  return $newstr;
+
+}
+
 
  ?>

@@ -21,11 +21,31 @@
 
 
     <div>
-      <label class="switch">
+      <?php
+      $langData = pll_the_languages( array( 'raw' => 1 ) );
+      $baseUrl = get_site_url();
+      if ($langData[nl][current_lang] == 1) {
+        // nl page
+        if ($langData[en][url]  != $baseUrl.'/en/') {
+          // if has translation
+          echo '<a href="'.$langData[en][url].'">English</a>';
+        }
+      } else {
+        //eng page
+        if ($langData[nl][url]  != $baseUrl) {
+          // if has translation
+          echo '<a href="'.$langData[nl][url].'">Nederlands</a>';
+        }
+
+      }
+      //print_r($langData)
+      ?>
+
+      <!-- <label class="switch">
          <span class="mSwitchLabel">ENG</span>
         <input type="checkbox" id="langSwitch">
         <span class="slider round"></span>
-      </label>
+      </label> -->
 
     </div>
 
