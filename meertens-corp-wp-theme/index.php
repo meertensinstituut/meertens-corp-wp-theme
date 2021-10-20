@@ -42,7 +42,7 @@
             // POST
         //} ?>
 
-        <?php //transl( 'Gepubliceerd op', 'Published 0n') ?> 12-12-2021
+        <?php //transl( 'Gepubliceerd op', 'Published 0n') ?> 
       </div>
       <div>Share</div>
 
