@@ -39,7 +39,7 @@
 
     <div class="mCardsColumn  mLineLeft" id="colB">
       <h2 class="mhomeColHeader paddingSite"><?php transl( 'Nieuws', 'News') ?></h2>
-      <?php query_posts( 'category_name=_niews&posts_per_page=3' ); ?>
+      <?php query_posts( 'category_name=_nieuws&posts_per_page=3' ); ?>
       <?php while ( have_posts() ) : the_post(); ?>
         <?php get_template_part( 'template-parts/content', 'cardSimpleThumb' ); ?>
       <?php endwhile; ?>

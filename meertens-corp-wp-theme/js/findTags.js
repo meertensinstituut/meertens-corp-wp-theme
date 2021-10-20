@@ -57,6 +57,7 @@ let createTageButtons = function (idOfResultList) {
 
   // get unique list of tags
   let uniqueTags = [...new Set(tagNames)];
+  uniqueTags.sort()
 
 
   // create buttons

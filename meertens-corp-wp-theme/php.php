@@ -9,8 +9,8 @@ function transl( $nl, $eng){
 
 function removeEngStr($str) {
   $newstr = str_replace("_eng_", "", $str);
-  return $newstr;
-
+  $newstr2 = str_replace("_", "", $newstr);
+  return $newstr2;
 }
 
 

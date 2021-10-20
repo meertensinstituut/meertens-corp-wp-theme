@@ -16,7 +16,6 @@
           while (have_posts()) : the_post();
               $listCategory = get_post_custom_values($key = 'list_category');
               $chosenCategory = $listCategory[0];
-
               ?>
               <?php the_content(); ?>
 
@@ -66,7 +65,10 @@
                       foreach($post_categories as $c){
                           $cat = get_category( $c );
                           $cats[] = array( 'name' => $cat->name, 'slug' => $cat->slug );
-                          echo '<span class="tag mTextSmall">'.$cat->name.'</span>';
+                          if ($chosenCategory != $cat->name) {
+                            echo '<span class="tag mTextSmall">'.$cat->name.'</span>';
+                          }
+
                       }
               ?>
             </div>
