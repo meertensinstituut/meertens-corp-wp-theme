@@ -36,7 +36,14 @@
 
     <div class="mLineLeft paddingSite mRightAside mAlignTopBottom ">
 
-      <div class="mTextBlock mTextSmall mTextGrey mMarginPageTop"><?php transl( 'Gepubliceerd op', 'Published 0n') ?> 12-12-2021</div>
+      <div class="mTextBlock mTextSmall mTextGrey mMarginPageTop">
+        <?php
+        //if (get_post_type() === 'post') {
+            // POST
+        //} ?>
+
+        <?php //transl( 'Gepubliceerd op', 'Published 0n') ?> 12-12-2021
+      </div>
       <div>Share</div>
 
     </div>
