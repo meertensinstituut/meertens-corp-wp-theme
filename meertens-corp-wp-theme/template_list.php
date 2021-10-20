@@ -1,5 +1,5 @@
 <?php /* Template Name: List page - general */ ?>
-
+<?php include 'php.php'; ?>
 <?php get_header(); ?>
 <?php get_sidebar(); ?>
 
