@@ -13,7 +13,7 @@
           'echo' => false,
           'depth'=> 2,
         ) );
-        echo strip_tags(removeEngStr($cleanMenu), "<a><ul><li>");
+        echo strip_tags($cleanMenu, "<a><ul><li>");
         //echo $cleanMenu;
 
       ?>
