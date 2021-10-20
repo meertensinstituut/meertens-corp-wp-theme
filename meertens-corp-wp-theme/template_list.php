@@ -79,7 +79,7 @@
 
           <article class="mCard mCardsSimpleThumb mLineLeft">
 
-            <?php if ($postcounter > 12) {?>
+            <?php //if ($postcounter <= 12) {?>
 
             <div class="mCards__thumbnailSmall">
           		<?php
@@ -87,7 +87,7 @@
           			echo get_the_post_thumbnail( $post_id, 'thumbnail' );
           	}  ?>
             </div>
-            <?php } ?>
+            <?php //} ?>
             <div class="">
 
 
