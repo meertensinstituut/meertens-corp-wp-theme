@@ -98,7 +98,7 @@
               <div><strong><?php the_title(); ?></strong></div>
 
 
-              <div><a href="<?php the_permalink(); ?>">Read more</a></div>
+              <div><a href="<?php the_permalink(); ?>">Lees verder</a></div>
               <?php if ($showTags) {?>
               <div class=""><?php
                         $post_categories = get_the_category();
