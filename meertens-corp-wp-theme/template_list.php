@@ -68,6 +68,7 @@
       if ($chosenCategory == 'Medewerkers') {
         $showTags = false;
       }
+      $postcounter = 1;
 
 
       if ( $loop->have_posts() ):   ?>
@@ -78,12 +79,15 @@
 
           <article class="mCard mCardsSimpleThumb mLineLeft">
 
+            <?php if ($postcounter > 12) {?>
+
             <div class="mCards__thumbnailSmall">
           		<?php
           		if ( has_post_thumbnail() ) {
           			echo get_the_post_thumbnail( $post_id, 'thumbnail' );
           	}  ?>
             </div>
+            <?php } ?>
             <div class="">
 
 
@@ -116,7 +120,7 @@
           </article>
 
 
-
+          <?php $postcounter++ ?>
         <?php endwhile; ?>
         <?php endif; ?>
 
