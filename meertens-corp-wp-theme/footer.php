@@ -18,6 +18,6 @@
 
 <?php wp_footer(); ?>
 
-
+<script src="<?php bloginfo('template_url'); ?>/js/navigation.js" charset="utf-8"></script>
 </body>
 </html>

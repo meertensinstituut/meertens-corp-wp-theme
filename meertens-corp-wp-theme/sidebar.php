@@ -3,10 +3,11 @@
     <div class="mBranding mMarginBottom">
       <a href="/"><img src="<?php bloginfo('template_url'); ?>/images/logo_Meertens.png" alt="Logo Meertens Instituut"></a>
       <div class="mSubTitle mText--XS">Onderzoek en documentatie <br> van Nederlandse taal en cultuur</div>
+      <button type="button" name="button" onclick="handleMenu()" id="hamburgerButton">Menu</button>
     </div>
 
 
-    <nav class="mMainNavgation mMarginBottom">
+    <nav class="mMainNavgation mMarginBottom" id="MainNavgation">
       <?php
         $cleanMenu = wp_nav_menu( array(
           //'menu_id' => 'my-custom-menu',
