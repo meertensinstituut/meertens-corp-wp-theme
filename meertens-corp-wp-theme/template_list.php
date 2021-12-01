@@ -7,10 +7,10 @@
 
 <div id="main">
 
-  <div class="mlayout3col mFlexConditional">
+  <div class="mlayout3col mlayoutHeight mFlexConditional">
 
 
-    <div class="mBorderUnder mLineLeft mAlignMiddle mCollHeaderBar" >
+    <div class="mBorderUnder mLineLeft mAlignMiddle mCollHeaderBar paddingSite" >
       <h1 ><?php echo removeEngStr(get_the_title()); ?></h1>
       <?php
       if (have_posts()) :
@@ -22,6 +22,10 @@
               if ($listOrder   != '') {
                 $chosenOrder = $listOrder[0];
               }
+              $getDomElem = get_post_custom_values($key = 'getDomElem'); //card_show_lines
+
+              //$previewQuery = '//'.$getDomElem[0];
+
 
               ?>
               <?php the_content(); ?>
@@ -98,6 +102,27 @@
               <div><strong><?php the_title(); ?></strong></div>
 
 
+
+              <?php
+              // show card preview
+              if ($getDomElem[0] != '') {
+                foreach ($getDomElem as $value) {
+                    $DOM = new DOMDocument();
+                    $DOM->loadHTML(get_the_content());
+
+                    $xpath = new DOMXPath($DOM);
+                    $someclass_elements = $xpath->query('//'.$value);
+                    $translation = iconv('utf-8', 'latin1', $someclass_elements[0]->textContent);
+                    echo '<div>'.$translation.'</div>';
+                }
+
+              }
+
+
+
+           ?>
+
+
               <div><a href="<?php the_permalink(); ?>">Lees verder</a></div>
               <?php if ($showTags) {?>
               <div class=""><?php
@@ -130,7 +155,7 @@
     <div class="mLineLeft paddingSite mRightAside mAlignTopBottom mBgGrey">
 
       <div class="mTextBlock mTextSmall mMarginPageTop"  id="filteronList"></div>
-      <div>Share</div>
+      <div></div>
 
     </div>
 

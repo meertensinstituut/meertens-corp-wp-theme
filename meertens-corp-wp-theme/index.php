@@ -7,7 +7,7 @@
 
 <div id="main">
 
-  <div class="mlayout3col mFlexConditional">
+  <div class="mlayout3col mlayoutHeight mFlexConditional">
     <main class="mLineLeft mDoubleCol mAlignCenter paddingSite">
       <div class="mTextBlock mTextSmall mTextGrey mMarginPageTop mMarginBasicBottom">
         <a href="/">Home</a> /
@@ -42,9 +42,9 @@
             // POST
         //} ?>
 
-        <?php //transl( 'Gepubliceerd op', 'Published 0n') ?> 
+        <?php //transl( 'Gepubliceerd op', 'Published 0n') ?>
       </div>
-      <div>Share</div>
+      <div></div>
 
     </div>
 

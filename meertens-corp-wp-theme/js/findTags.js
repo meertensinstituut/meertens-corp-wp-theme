@@ -61,10 +61,14 @@ let createTageButtons = function (idOfResultList) {
 
 
   // create buttons
-  let output = 'Filter op <br>';
-  uniqueTags.forEach(item => output+= '<button class="mButtonClean" onclick="findInList(\''+item+'\', \''+idOfResultList+'\')">'+item+'</button><br>');
-  output+= '<br><button type="button" name="button" onclick="clearList(\''+idOfResultList+'\')"">Alle resultaten</button>';
-  document.getElementById('filteronList').innerHTML =  output;
+  if (uniqueTags.length > 0) {
+    let output = 'Filter op <br>';
+    uniqueTags.forEach(item => output+= '<button class="mButtonClean" onclick="findInList(\''+item+'\', \''+idOfResultList+'\')">'+item+'</button><br>');
+    output+= '<br><button type="button" name="button" onclick="clearList(\''+idOfResultList+'\')"">Alle resultaten</button>';
+    document.getElementById('filteronList').innerHTML =  output;
+  }
+
+
 }
 
 createTageButtons('list1');
