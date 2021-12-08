@@ -23,23 +23,29 @@
 
     <div>
       <?php
+      //index.php/home-eng/
       $langData = pll_the_languages( array( 'raw' => 1 ) );
       $baseUrl = get_site_url();
+      $transLink = '';
       if ($langData[nl][current_lang] == 1) {
         // nl page
         if ($langData[en][url]  != $baseUrl.'/en/') {
           // if has translation
-          echo '<a href="'.$langData[en][url].'">English</a>';
+          $transLink = '<a href="'.$langData[en][url].'">English</a>';
         }
       } else {
         //eng page
         if ($langData[nl][url]  != $baseUrl) {
           // if has translation
-          echo '<a href="'.$langData[nl][url].'">Nederlands</a>';
+          $transLink = '<a href="'.$langData[nl][url].'">Nederlands</a>';
         }
 
       }
       //print_r($langData)
+      if ( is_home() ) {
+        $transLink = '<a href="/index.php/home-eng/">English</a>';
+      }
+      echo $transLink;
       ?>
 
       <!-- <label class="switch">
