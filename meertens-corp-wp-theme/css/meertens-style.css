@@ -74,7 +74,7 @@
 .mhomeColHeaderGreen {
   color: #000;
   background-color: #75ae1c;
-  border-bottom: 2px dotted #598415;
+  border-bottom: 2px dotted #75ae1c;
 }
 
 .mlayout {
@@ -281,6 +281,11 @@ a {
   font-size: 25px;
   font-weight: 500;
   line-height: 150%;
+}
+.mHomeAboutBox h1 {
+  font-size: 25px;
+  padding: 0 2rem;
+  line-height: 130%;
 }
 
 .mTextBlock {

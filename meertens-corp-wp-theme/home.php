@@ -12,7 +12,7 @@
   <div class="mlayout3col mlayoutHome mlayoutHeight mLineLeft">
 
     <div class="homeBlok-wide centerBlock mLineLeft mHomeAboutBox" id="about" style="background-image: url(<?php bloginfo('template_url'); ?>/images/home-table-hero.png);">
-      <?php transl( '<p>Het Meertens Instituut is een onderzoeksinstituut dat zich bezighoudt met de bestudering en documentatie van Nederlandse taal en cultuur. Centraal staan de verschijnselen die het alledaagse leven in onze samenleving vormgeven.</p>', '<p>The Meertens Institute, established in 1926, has been a research institute of the Royal Netherlands Academy of Arts and Sciences (KNAW) since 1952. We study the diversity in language and culture in the Netherlands.</p>') ?>
+      <?php transl( '<h1>Het Meertens Instituut is een onderzoeksinstituut dat zich bezighoudt met de bestudering en documentatie van Nederlandse taal en cultuur. Centraal staan de verschijnselen die het alledaagse leven in onze samenleving vormgeven.</h1>', '<h1>The Meertens Institute, established in 1926, has been a research institute of the Royal Netherlands Academy of Arts and Sciences (KNAW) since 1952. We study the diversity in language and culture in the Netherlands.</h1>') ?>
 
     </div>
 
