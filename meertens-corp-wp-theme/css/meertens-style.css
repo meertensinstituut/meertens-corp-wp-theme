@@ -72,9 +72,9 @@
 }
 
 .mhomeColHeaderGreen {
-  color: #fff;
+  color: #000;
   background-color: #75ae1c;
-  border-bottom: 2px dotted #75ae1c;
+  border-bottom: 2px dotted #598415;
 }
 
 .mlayout {
@@ -261,7 +261,7 @@
 }
 
 a {
-  color: #1c75ad;
+  color: #1b4593;
 }
 
 .mLineLeft {
@@ -311,7 +311,7 @@ a {
 
 .mfooter {
   width: 100%;
-  background-color: #d82443;
+  background-color: #aa1d37;
   color: #fff;
   padding: 3rem 0;
   position: relative;
