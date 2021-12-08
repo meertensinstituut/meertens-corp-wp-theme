@@ -48,7 +48,7 @@
       <h2 class="mhomeColHeader paddingSite">Media</h2>
       <?php query_posts( 'category_name=in-de-media&posts_per_page=3' ); ?>
       <?php while ( have_posts() ) : the_post(); ?>
-        <?php get_template_part( 'template-parts/content', 'cardSimple' ); ?>
+        <?php get_template_part( 'template-parts/content', 'cardSimpleThumb' ); ?>
       <?php endwhile; ?>
 
     </div>
