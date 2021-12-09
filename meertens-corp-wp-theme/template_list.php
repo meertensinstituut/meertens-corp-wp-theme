@@ -81,7 +81,7 @@
         <?php while ( $loop->have_posts() ) : $loop->the_post( get_the_ID() )?>
 
 
-          <article class="mCard mCardsSimpleThumb mLineLeft">
+          <article class="mCard mCardsSimpleThumb mLineLeft incCard">
 
             <?php if ($postcounter <= 12) {?>
 
@@ -92,14 +92,19 @@
           	}  ?>
             </div>
             <?php } ?>
-            <div class="">
+            <div>
 
 
 
               <?php if ($showDate) {?>
                 <div class="mTextSmall mTextGrey"><?php echo get_the_date('d-m-Y'); ?></div>
                 <?php } ?>
-              <div><strong><?php the_title(); ?></strong></div>
+              <div>
+                <h2>
+                  <a href="<?php the_permalink(); ?>"><?php the_title(); ?>
+                  </a>
+                </h2>
+              </div>
 
 
 
@@ -123,7 +128,7 @@
            ?>
 
 
-              <div><a href="<?php the_permalink(); ?>">Lees verder</a></div>
+
               <?php if ($showTags) {?>
               <div class=""><?php
                         $post_categories = get_the_category();

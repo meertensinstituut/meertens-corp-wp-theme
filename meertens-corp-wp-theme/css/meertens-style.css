@@ -601,6 +601,13 @@ h1 {
   border-bottom: 2px dotted #d82443;
 }
 
+.mCard h2 {
+  font-size: 17px;
+}
+.mCard h2 a {
+  color: #1a1a1a;
+}
+
 .mCardsVolg {
   display: flex;
   flex-direction: column;
@@ -654,6 +661,44 @@ h1 {
 }
 .mNoImg img {
   display: none;
+}
+
+.incCard {
+  position: relative;
+}
+
+.incCard a {
+  text-decoration: none;
+}
+
+.incCard a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.incCard a:focus {
+  text-decoration: underline;
+}
+
+.minCard:focus-within a:focus {
+  text-decoration: none;
+}
+
+.minCard, .incCard .text {
+  display: flex;
+  flex-direction: column;
+}
+
+.incCard .text {
+  flex-grow: 1;
+}
+
+.incCard .text :last-child {
+  margin-top: auto;
 }
 
 body {

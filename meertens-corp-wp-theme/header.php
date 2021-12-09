@@ -20,7 +20,13 @@ if ( is_user_logged_in() ) {
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-	<title>Meertens Instituut</title>
+	<title>
+    <?php if ( !is_home() ) {
+      echo removeEngStr(get_the_title());
+      echo ' | ';
+    } ?>
+    Meertens Instituut
+  </title>
 	<!-- <title><?php //the_title();?></title> -->
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
