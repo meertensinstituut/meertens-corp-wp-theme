@@ -44,6 +44,11 @@
           $transLink = '<a href="'.$langData[nl][url].'">Nederlands</a>';
         }
 
+
+      }
+
+      if ($_SERVER['PHP_SELF']  = $baseUrl.'/index.php/home-eng/') {
+        $transLink = '<a href="'.$baseUrl.'">Nederlands</a>';
       }
 
       if ( is_home() ) {
