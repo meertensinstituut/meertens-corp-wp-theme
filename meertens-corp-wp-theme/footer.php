@@ -5,15 +5,19 @@
   <div class="mlayout3col">
     <div class=" paddingSite">
       <strong>Contact</strong><br>
-      Telefoon: 020 462 85 00<br>
+      <?php transl( 'Telefoon', 'Telephone') ?>: 020 462 85 00<br>
       Fax: 020 462 85 55<br>
-      Email: info@meertens.knaw.nl
+      Email: info@meertens.knaw.nl<br>
+      <br>
+      <a href="https://www.knaw.nl/en/about-us/career-and-talent-development-at-the-academy/privacy-statement" target="_blank">Privacy statement</a>
+
+
 </div>
     <div class=" paddingSite">
-      <strong>Postadres</strong><br>
+      <strong><?php transl( 'Postadres', 'Postal address') ?></strong><br>
       Postbus 10855<br>
       1001 EW Amsterdam<br><br>
-      <strong>Bezoekadres</strong><br>
+      <strong><?php transl( 'Bezoekadres', 'Visiting address') ?></strong><br>
       Oudezijds Achterburgwal 185<br>
       1012 DK Amsterdam
 </div>
