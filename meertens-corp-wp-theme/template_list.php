@@ -26,7 +26,6 @@
 
               //$previewQuery = '//'.$getDomElem[0];
 
-
               ?>
               <?php the_content(); ?>
 
@@ -101,8 +100,7 @@
                 <?php } ?>
               <div>
                 <h2>
-                  <a href="<?php the_permalink(); ?>"><?php the_title(); ?>
-                  </a>
+                  <a href="<?php the_permalink(); ?>"><?php echo removeEngStr(get_the_title()); ?></a>
                 </h2>
               </div>
 
@@ -136,7 +134,7 @@
                         foreach($post_categories as $c){
                             $cat = get_category( $c );
                             $cats[] = array( 'name' => $cat->name, 'slug' => $cat->slug );
-                            if ($chosenCategory != $cat->name) {
+                            if ( ($chosenCategory != $cat->name) && $cat->name != 'Uncategorized') {
                               echo '<span class="tag mTextSmall">'.$cat->name.'</span>';
                             }
 

@@ -57,9 +57,9 @@
 
     <div class="mCardsColumn  homeBlok-high" id="colC">
       <div class="homeBlok-right-top paddingSite">
-        <div><strong>Research</strong><br><a href="/index.php/onderzoek/onderzoeksprojecten-2//">Bekijk de onderzoeksprojecten van het Meertens Instituut</a></div>
-        <div><strong>Datasets</strong><br><a href="/index.php/collecties/databanken/">Bekijk de databanken van het Meertens Instituut</a></div>
-        <div><strong>Publications</strong><br><a href="/index.php/onderzoek/publicaties/">Bekijk de publicaties van het Meertens Instituut</a></div>
+        <div><strong>Research</strong><br><a href="/index.php/onderzoek/onderzoeksprojecten-2//">Our research projects</a></div>
+        <div><strong>Datasets</strong><br><a href="/index.php/collecties/databanken/">Our datasets</a></div>
+        <div><strong>Publications</strong><br><a href="/index.php/onderzoek/publicaties/">Our publication</a></div>
       </div>
 
 

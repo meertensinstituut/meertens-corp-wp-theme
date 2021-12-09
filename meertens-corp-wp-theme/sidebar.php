@@ -11,6 +11,7 @@
 
     <nav class="mMainNavgation mMarginBottom" id="MainNavgation">
       <?php
+      
         $cleanMenu = wp_nav_menu( array(
           //'menu_id' => 'my-custom-menu',
           'echo' => false,
@@ -47,7 +48,7 @@
 
       }
 
-      if ($_SERVER['PHP_SELF']  = $baseUrl.'/index.php/home-eng/') {
+      if ($_SERVER['PHP_SELF']  == '/index.php/home-eng/') {
         $transLink = '<a href="'.$baseUrl.'">Nederlands</a>';
       }
 
