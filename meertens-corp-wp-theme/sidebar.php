@@ -27,6 +27,8 @@
       $langData = pll_the_languages( array( 'raw' => 1 ) );
       $baseUrl = get_site_url();
       $transLink = '';
+      echo $baseUrl;
+      print_r($langData);
       if ($langData[nl][current_lang] == 1) {
         // nl page
         if ($langData[en][url]  != $baseUrl.'/en/') {
@@ -41,7 +43,7 @@
         }
 
       }
-      //print_r($langData)
+
       if ( is_home() ) {
         $transLink = '<a href="/index.php/home-eng/">English</a>';
       }
