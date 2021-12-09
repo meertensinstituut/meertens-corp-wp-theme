@@ -37,12 +37,8 @@
     <div class="mLineLeft paddingSite mRightAside mAlignTopBottom ">
 
       <div class="mTextBlock mTextSmall mTextGrey mMarginPageTop">
-        <?php
-        //if (get_post_type() === 'post') {
-            // POST
-        //} ?>
+        <?php get_template_part( 'template-parts/comp', 'social-media' ); ?>
 
-        <?php //transl( 'Gepubliceerd op', 'Published 0n') ?>
       </div>
       <div></div>
 

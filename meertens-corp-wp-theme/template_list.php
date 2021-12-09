@@ -153,8 +153,11 @@
     </main>
 
     <div class="mLineLeft paddingSite mRightAside mAlignTopBottom mBgGrey">
+      <div>
+        <div class="mTextBlock mTextSmall mMarginPageTop"  id="filteronList"></div>
+        <?php get_template_part( 'template-parts/comp', 'social-media' ); ?>
+      </div>
 
-      <div class="mTextBlock mTextSmall mMarginPageTop"  id="filteronList"></div>
       <div></div>
 
     </div>
