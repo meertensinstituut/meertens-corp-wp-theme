@@ -11,7 +11,7 @@
 
     <nav class="mMainNavgation mMarginBottom" id="MainNavgation">
       <?php
-      
+
         $cleanMenu = wp_nav_menu( array(
           //'menu_id' => 'my-custom-menu',
           'echo' => false,
@@ -53,7 +53,7 @@
       }
 
       if ( is_home() ) {
-        $transLink = '<a href="/index.php/home-eng/">English</a>';
+        //$transLink = '<a href="/index.php/home-eng/">English</a>';
       }
       echo $transLink;
       ?>
