@@ -31,7 +31,8 @@
       print_r($langData);
       if ($langData[nl][current_lang] == 1) {
         // nl page
-        if ($langData[en][url]  != $baseUrl.'/en/') {
+
+        if ($langData[en][url]  != $baseUrl.'/index.php/en/') {
           // if has translation
           $transLink = '<a href="'.$langData[en][url].'">English</a>';
         }
