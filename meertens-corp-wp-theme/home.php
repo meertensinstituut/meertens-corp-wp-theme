@@ -18,7 +18,7 @@
 
 
     <div class="mCardsColumn mLineLeft" id="colA">
-      <h2 class="mhomeColHeader mhomeColHeaderGreen paddingSite"><?php transl( 'Uitgelicht', 'Featured') ?></h2>
+      <h2 class="mhomeColHeader mhomeColHeaderGreen paddingSite"><?php transl( 'Uitgelicht', 'Featured (in Dutch)') ?></h2>
       <?php
       query_posts( 'category_name=uitgelicht&posts_per_page=6&lang=nl' );
       $counter = 0;
@@ -38,14 +38,14 @@
 
 
     <div class="mCardsColumn  mLineLeft" id="colB">
-      <h2 class="mhomeColHeader paddingSite"><?php transl( 'Nieuws', 'News') ?></h2>
+      <h2 class="mhomeColHeader paddingSite"><?php transl( 'Nieuws', 'News (in Dutch)') ?></h2>
       <?php query_posts( 'category_name=nieuws&posts_per_page=3&lang=nl' ); ?>
       <?php while ( have_posts() ) : the_post(); ?>
         <?php get_template_part( 'template-parts/content', 'cardSimpleThumb' ); ?>
       <?php endwhile; ?>
 
 
-      <h2 class="mhomeColHeader paddingSite">Media</h2>
+      <h2 class="mhomeColHeader paddingSite"><?php transl( 'In de media', 'In the media (in Dutch)') ?></h2>
       <?php query_posts( 'category_name=in-de-media&posts_per_page=3&lang=nl' ); ?>
       <?php while ( have_posts() ) : the_post(); ?>
         <?php get_template_part( 'template-parts/content', 'cardSimpleThumb' ); ?>
@@ -62,7 +62,7 @@
       </div>
 
 
-        <h2 class="mhomeColHeader paddingSite "><?php transl( 'Agenda', 'Events') ?></h2>
+        <h2 class="mhomeColHeader paddingSite "><?php transl( 'Agenda', 'Events (in Dutch)') ?></h2>
         <?php query_posts( 'category_name=agenda&posts_per_page=3&lang=nl' ); ?>
         <?php while ( have_posts() ) : the_post(); ?>
           <?php get_template_part( 'template-parts/content', 'cardSimpleThumb' ); ?>
