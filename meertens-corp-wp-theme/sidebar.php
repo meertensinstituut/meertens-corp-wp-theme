@@ -53,7 +53,7 @@
       }
 
       if ( is_home() ) {
-        //$transLink = '<a href="/index.php/home-eng/">English</a>';
+        $transLink = '<a href="/index.php/en/">English</a>';
       }
       echo $transLink;
       ?>
