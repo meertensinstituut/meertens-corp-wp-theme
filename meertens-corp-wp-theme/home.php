@@ -67,6 +67,10 @@
         <?php while ( have_posts() ) : the_post(); ?>
           <?php get_template_part( 'template-parts/content', 'cardSimpleThumb' ); ?>
         <?php endwhile; ?>
+        <div class="paddingSite"><br><br>
+          <?php get_template_part( 'template-parts/comp', 'social-media' ); ?>
+        </div>
+
 
     </div>
 
