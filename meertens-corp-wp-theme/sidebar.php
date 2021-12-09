@@ -27,8 +27,7 @@
       $langData = pll_the_languages( array( 'raw' => 1 ) );
       $baseUrl = get_site_url();
       $transLink = '';
-      echo $baseUrl;
-      print_r($langData);
+
       if ($langData[nl][current_lang] == 1) {
         // nl page
 
