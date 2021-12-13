@@ -23,8 +23,8 @@
                 $chosenOrder = $listOrder[0];
               }
               $getDomElem = get_post_custom_values($key = 'getDomElem'); //card_show_lines
+              $altLangList = get_post_custom_values($key = 'lijst_taal'); //card_show_lines
 
-              //$previewQuery = '//'.$getDomElem[0];
 
               ?>
               <?php the_content(); ?>
@@ -55,16 +55,16 @@
         $orderDirection = 'ASC';
       }
 
+      //$altLangList[0]
+      $lang = '';
+      if ($altLangList[0]!='') {
+        $lang = '&lang='.$altLangList[0];
+      }
 
-      $loop = new WP_Query(array(
-          'category_name' => $chosenCategory,
-          'posts_per_page'   => -1,
-          'order'     => $orderDirection,
-          'orderby'   => $chosenOrder
 
-      ));
+
       $showDate = false;
-      if ($chosenCategory == '_nieuws') {
+      if ($chosenCategory == 'Nieuws') {
         $showDate = true;
       }
       $showTags = true;
@@ -74,10 +74,11 @@
       $postcounter = 1;
 
 
-      if ( $loop->have_posts() ):   ?>
+      query_posts( 'category_name='.$chosenCategory.'&posts_per_page=-1&order='.$orderDirection.'&orderby='.$chosenOrder.$lang); //&lang=nl
+      ?>
 
 
-        <?php while ( $loop->have_posts() ) : $loop->the_post( get_the_ID() )?>
+        <?php while ( have_posts() ) : the_post();?>
 
 
           <article class="mCard mCardsSimpleThumb mLineLeft incCard">
@@ -150,7 +151,7 @@
 
           <?php $postcounter++ ?>
         <?php endwhile; ?>
-        <?php endif; ?>
+        <?php //endif; ?>
 
 
     </main>
