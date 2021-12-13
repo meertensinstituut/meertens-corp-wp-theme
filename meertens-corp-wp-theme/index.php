@@ -7,10 +7,10 @@
 
 <div id="main">
 
-  <div class="mlayout3col mlayoutHeight mFlexConditional">
+  <div class="mlayout3col mlayoutHeight mFlexConditional mlayoutVolg">
     <main class="mLineLeft mDoubleCol mAlignCenter paddingSite">
-      <div class="mTextBlock mTextSmall mTextGrey mMarginPageTop mMarginBasicBottom">
-        <a href="/">Home</a> /
+      <div class="mTextBlock mTextSmall mTextGrey ">
+
       </div>
       <div class="mTextBlock">
         <h1 ><?php echo removeEngStr(get_the_title()); ?></h1>

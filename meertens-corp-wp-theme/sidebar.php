@@ -38,23 +38,24 @@
           // if has translation
           $transLink = '<a href="'.$langData[en][url].'">English</a>';
         }
+        if ( is_home() ) {
+          $transLink = '<a href="/index.php/en/">English</a>';
+        }
       } else {
         //eng page
         if ($langData[nl][url]  != $baseUrl) {
           // if has translation
           $transLink = '<a href="'.$langData[nl][url].'">Nederlands</a>';
         }
+        if ( is_home() ) {
+          $transLink = '<a href="/index.php/">Nederlands</a>';
+        }
 
 
       }
 
-      if ($_SERVER['PHP_SELF']  == '/index.php/home-eng/') {
-        $transLink = '<a href="'.$baseUrl.'">Nederlands</a>';
-      }
 
-      if ( is_home() ) {
-        $transLink = '<a href="/index.php/en/">English</a>';
-      }
+
       echo $transLink;
       ?>
 

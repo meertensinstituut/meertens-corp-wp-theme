@@ -7,7 +7,7 @@
 
 <div id="main">
 
-  <div class="mlayout3col mlayoutHeight mFlexConditional">
+  <div class="mlayout3col mlayoutHeight mFlexConditional mlayoutVolg">
 
 
     <div class="mBorderUnder mLineLeft mAlignMiddle mCollHeaderBar paddingSite" >
