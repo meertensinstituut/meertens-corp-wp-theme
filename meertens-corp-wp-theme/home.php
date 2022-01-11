@@ -65,7 +65,7 @@
         <h2 class="mhomeColHeader paddingSite "><?php transl( 'Agenda', 'Events (in Dutch)') ?></h2>
         <?php query_posts( 'category_name=agenda&posts_per_page=3&lang=nl' ); ?>
         <?php while ( have_posts() ) : the_post(); ?>
-          <?php get_template_part( 'template-parts/content', 'cardSimpleThumb' ); ?>
+          <?php get_template_part( 'template-parts/content', 'content-cardSimpleNoDate' ); ?>
         <?php endwhile; ?>
         <div class="paddingSite"><br><br>
           <?php get_template_part( 'template-parts/comp', 'social-media' ); ?>
