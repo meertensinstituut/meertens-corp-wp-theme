@@ -702,6 +702,32 @@ h1 {
   margin-top: auto;
 }
 
+.ui-tabs-nav {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.ui-tabs-nav li {
+  list-style: none;
+  padding: 0.5rem 1rem;
+  background-color: #f2f2f2;
+  margin-left: 1px;
+  margin-bottom: 1px;
+  border-radius: 3px 3px 0 0;
+}
+.ui-tabs-nav a {
+  text-decoration: none;
+}
+.ui-tabs-nav .ui-state-active {
+  background-color: #aa1d37;
+}
+.ui-tabs-nav .ui-state-active a {
+  color: #fff;
+}
+
 body {
   margin: 0;
   padding: 0;
