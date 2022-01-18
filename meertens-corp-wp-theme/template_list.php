@@ -112,7 +112,7 @@
               if ($getDomElem[0] != '') {
                 foreach ($getDomElem as $value) {
                     $DOM = new DOMDocument();
-                    $DOM->loadHTML(get_the_content());
+                    @$DOM->loadHTML(get_the_content());
 
                     $xpath = new DOMXPath($DOM);
                     $someclass_elements = $xpath->query('//'.$value);
