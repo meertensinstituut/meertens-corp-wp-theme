@@ -116,8 +116,22 @@
 
                     $xpath = new DOMXPath($DOM);
                     $someclass_elements = $xpath->query('//'.$value);
-                    $translation = iconv('utf-8', 'latin1', $someclass_elements[0]->textContent);
-                    echo '<div>'.$translation.'</div>';
+
+                    if ($value == 'dl') {
+                      foreach ($someclass_elements[0]->childNodes as $node) {
+                        if ($node->nodeName == 'dt') {
+                          echo '<div><span class="mTextGrey">'.ucfirst($node->textContent).'</span>: ';
+                        }
+                        if ($node->nodeName == 'dd') {
+                          echo ucfirst($node->textContent).'</div>';
+                        }
+                      }
+                    } else {
+                      $translation = iconv('utf-8', 'latin1', $someclass_elements[0]->textContent);
+                      echo '<div><em>'.ucfirst($translation).'</em></div>';
+                    }
+
+
                 }
 
               }
