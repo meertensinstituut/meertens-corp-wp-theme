@@ -23,7 +23,9 @@
                 $chosenOrder = $listOrder[0];
               }
               $getDomElem = get_post_custom_values($key = 'getDomElem'); //card_show_lines
-              $altLangList = get_post_custom_values($key = 'lijst_taal'); //card_show_lines
+              $altLangList = get_post_custom_values($key = 'lijst_taal');
+              $listTextPreview = get_post_custom_values($key = 'list_text-preview');
+
 
 
               ?>
@@ -130,16 +132,15 @@
                       $translation = iconv('utf-8', 'latin1', $someclass_elements[0]->textContent);
                       echo '<div><em>'.ucfirst($translation).'</em></div>';
                     }
-
-
                 }
-
               }
-
-
-
            ?>
-
+           <?php
+           //echo "<div>prev: ".$listTextPreview[0]."</div>";
+           if ($listTextPreview[0] == 'true') {
+             the_content();
+           }
+           ?>
 
 
               <?php if ($showTags) {?>
