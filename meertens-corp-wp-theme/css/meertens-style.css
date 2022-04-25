@@ -328,35 +328,33 @@ a {
 
 .mfooterLogos {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  grid-template-columns: repeat(1, 1fr);
   grid-template-rows: auto;
   gap: 2px;
   box-sizing: content-box;
 }
 .mfooterLogos img {
   width: calc(100% - 60px);
+  min-width: 50px;
   height: auto;
   background-color: #fff;
-  padding: 30px;
+  padding: 5px;
 }
-.mfooterLogos #logoknaw {
-  grid-column: 1/4;
+.mfooterLogos #logoclarin {
+  grid-column: 1;
   grid-row: 1;
 }
-.mfooterLogos #logohuc {
+.mfooterLogos #logodsa {
   grid-column: 1;
   grid-row: 2;
 }
-.mfooterLogos #logoclarin {
-  grid-column: 2;
-  grid-row: 2;
-}
-.mfooterLogos #logodsa {
-  grid-column: 3;
-  grid-row: 2;
-}
 
+@media (min-width: 1100px) {
+  .mfooterLogos img {
+    padding: 20px;
+  }
+}
 dl dt {
   text-transform: capitalize;
   font-style: italic;
@@ -594,6 +592,22 @@ h1 {
     left: 330px;
   }
 }
+.logoMain {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+.logoMain img {
+  height: auto;
+  margin-right: 30px;
+}
+.logoMain #logoknaw {
+  width: 70px;
+}
+.logoMain #logohuc {
+  width: 70px;
+}
+
 .mCardHome, .mCard {
   padding-top: 3rem;
   padding-bottom: 3rem;

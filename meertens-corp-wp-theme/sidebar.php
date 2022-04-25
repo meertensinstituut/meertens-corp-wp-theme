@@ -3,7 +3,7 @@
     <div class="mBranding mMarginBottom">
       <a href="/"><img src="<?php bloginfo('template_url'); ?>/images/logo_Meertens.png" alt="Welkom op de site van het Meertens Instituut. Link naar homepage"></a>
       <div class="mSubTitle mText--XS">
-        <?php transl( 'Onderzoek en documentatie <br> van Nederlandse taal en cultuur', 'Research and documentation <br>  of Dutch language and culture') ?>
+        <?php transl( 'Onderzoek en documentatie <br>van taal en cultuur in Nederland', 'Research and documentation <br>  of Dutch language and culture') ?>
       </div>
       <button type="button" name="button" onclick="handleMenu()" id="hamburgerButton">Menu</button>
     </div>
@@ -25,6 +25,12 @@
 
 
     <div>
+      <div id="logoMain" class="logoMain">
+        <span><img id="logohuc" src="<?php bloginfo('template_url'); ?>/images/logo-huc.png" alt="Logo KNAW HuC"></span>
+        <span><img id="logoknaw" src="<?php bloginfo('template_url'); ?>/images/logo-knaw-compact.jpg" alt="Logo KNAW"></span>
+      </div>
+
+
       <?php
       //index.php/home-eng/
       $langData = pll_the_languages( array( 'raw' => 1 ) );

@@ -5,10 +5,12 @@ function handleMenu() {
   if (showMenuStatus) {
     document.getElementById('hamburgerButton').innerHTML = 'Menu'
     document.getElementById('MainNavgation').style.display = 'none'
+    document.getElementById('logoMain').style.display = 'none'
     showMenuStatus = false
   } else {
     document.getElementById('hamburgerButton').innerHTML = 'X'
     document.getElementById('MainNavgation').style.display = 'flex'
+    document.getElementById('logoMain').style.display = 'flex'
     showMenuStatus = true
 
   }
@@ -21,11 +23,13 @@ function reponsive(x) {
     if (!showMenuStatus) {
       //document.getElementById('hamburgerButton').innerHTML = 'X'
       document.getElementById('MainNavgation').style.display = 'none'
+      document.getElementById('logoMain').style.display = 'none'
       showMenuStatus = false
     }
 
   } else {
     document.getElementById('MainNavgation').style.display = 'flex';
+    document.getElementById('logoMain').style.display = 'flex'
   }
 }
 

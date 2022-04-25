@@ -27,8 +27,6 @@
 </div>
     <div class=" paddingSite">
       <div class="mfooterLogos">
-        <img id="logoknaw" src="<?php bloginfo('template_url'); ?>/images/logo-knaw.png" alt="Logo KNAW">
-        <img id="logohuc" src="<?php bloginfo('template_url'); ?>/images/logo-huc.png" alt="Logo KNAW HuC">
         <img id="logoclarin" src="<?php bloginfo('template_url'); ?>/images/logo-clarin-b-centre.png" alt="Logo clarin b centre">
         <img id="logodsa" src="<?php bloginfo('template_url'); ?>/images/logo-core-trust.png" alt="Logo Core Trust Seal">
 
