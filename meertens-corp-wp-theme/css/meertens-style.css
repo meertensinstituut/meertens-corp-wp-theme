@@ -355,6 +355,11 @@ a {
     padding: 20px;
   }
 }
+@media (min-width: 1300px) {
+  .mfooterLogos img {
+    padding: 30px;
+  }
+}
 dl dt {
   text-transform: capitalize;
   font-style: italic;
