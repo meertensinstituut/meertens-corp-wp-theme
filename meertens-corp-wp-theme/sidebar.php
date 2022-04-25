@@ -25,10 +25,7 @@
 
 
     <div>
-      <div id="logoMain" class="logoMain">
-        <span><img id="logohuc" src="<?php bloginfo('template_url'); ?>/images/logo-huc.png" alt="Logo KNAW HuC"></span>
-        <span><img id="logoknaw" src="<?php bloginfo('template_url'); ?>/images/logo-knaw-compact.jpg" alt="Logo KNAW"></span>
-      </div>
+
 
 
       <?php
@@ -65,11 +62,10 @@
       echo $transLink;
       ?>
 
-      <!-- <label class="switch">
-         <span class="mSwitchLabel">ENG</span>
-        <input type="checkbox" id="langSwitch">
-        <span class="slider round"></span>
-      </label> -->
+      <div id="logoMain" class="logoMain">
+        <span><img id="logohuc" src="<?php bloginfo('template_url'); ?>/images/logo-huc.png" alt="Logo KNAW HuC"></span>
+        <span><img id="logoknaw" src="<?php bloginfo('template_url'); ?>/images/logo-knaw-compact.jpg" alt="Logo KNAW"></span>
+      </div>
 
     </div>
 
