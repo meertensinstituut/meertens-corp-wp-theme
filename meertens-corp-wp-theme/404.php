@@ -1,36 +1,47 @@
-<?php
+<?php include 'php.php'; ?>
+<?php get_header(); ?>
+<?php get_sidebar(); ?>
 
-get_header();
-?>
 
-<div class="mpFrame">
-	<?php get_template_part( 'template-parts/mp_aside', '' ); ?>
 
-	<div class="mpContent">
-		<h1>Oops! That page can&rsquo;t be found.- 404</h1>
-		<p>It looks like nothing was found at this location</p>
-		<?php
-		while ( have_posts() ) : the_post();
 
-			get_template_part( 'template-parts/content', 'page' );
+<div id="main">
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+  <div class="mlayout3col mlayoutHeight mFlexConditional mlayoutVolg">
+    <main class="mLineLeft mDoubleCol mAlignCenter paddingSite">
+      <div class="mTextBlock mTextSmall mTextGrey ">
 
-		endwhile; // End of the loop.
-		?>
+      </div>
+      <div class="mTextBlock">
+        <h1>404</h1>
 
-	</div>
+
+          <p>Helaas, deze pagina bestaat niet meer./ This page does noet exist.</p>
+		  <p><a href="/">Home</a></p>
+
+      </div>
+
+    </main>
+
+
+    <div class="mLineLeft paddingSite mRightAside mAlignTopBottom ">
+
+      <div class="mTextBlock mTextSmall mTextGrey mMarginPageTop">
+        <?php get_template_part( 'template-parts/comp', 'social-media' ); ?>
+
+      </div>
+      <div></div>
+
+    </div>
+
+
+
+
 </div>
 
 
 
+</div>
 
 
-
-
-<?php
-get_footer();
-?>
+<?php get_footer(); ?>
