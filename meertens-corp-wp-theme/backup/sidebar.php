@@ -21,13 +21,7 @@
         //echo $cleanMenu;
 
       ?>
-      <form id="searchform" method="get"  class="me_searchBox" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-          <label class="searchLabel" for="search"><?php transl( 'Zoek in de website', 'Search this site') ?></label>
-          <input type="text" class="search-field" name="s" id="search" value="<?php echo get_search_query(); ?>"  placeholder="<?php transl( 'Zoek in de website', 'Search this site') ?>">
-          <button type="submit" aria-label="<?php transl( 'Zoek de website', 'Search this site') ?>"><img src="<?php bloginfo('template_url'); ?>/images/icon-search.png" alt=""></button>
-      </form>
     </nav>
-
 
 
     <div>
@@ -40,25 +34,27 @@
       $baseUrl = get_site_url();
       $transLink = '';
 
-      if ($langData['nl']['current_lang'] == 1) {
+      if ($langData[nl][current_lang] == 1) {
         // nl page
 
-        if ($langData['en']['url']  != $baseUrl.'/index.php/en/') {
+        if ($langData[en][url]  != $baseUrl.'/index.php/en/') {
           // if has translation
-          $transLink = '<a href="'.$langData['en']['url'].'">English</a>';
+          $transLink = '<a href="'.$langData[en][url].'">English</a>';
         }
         if ( is_home() ) {
           $transLink = '<a href="/index.php/en/">English</a>';
         }
       } else {
         //eng page
-        if ($langData['nl']['url']  != $baseUrl) {
+        if ($langData[nl][url]  != $baseUrl) {
           // if has translation
-          $transLink = '<a href="'.$langData['nl']['url'].'">Nederlands</a>';
+          $transLink = '<a href="'.$langData[nl][url].'">Nederlands</a>';
         }
         if ( is_home() ) {
           $transLink = '<a href="/index.php/">Nederlands</a>';
         }
+
+
       }
 
 

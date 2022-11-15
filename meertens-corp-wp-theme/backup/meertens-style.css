@@ -260,55 +260,6 @@
   margin-bottom: 3rem;
 }
 
-.me_searchBox {
-  display: flex;
-  margin-top: 1rem;
-  max-width: 250px;
-  width: 100%;
-}
-.me_searchBox input, .me_searchBox button {
-  padding: 0.3rem;
-  border: 1px solid #d9d9d9;
-  border-radius: 3px 0 0 3px;
-}
-.me_searchBox button {
-  border-radius: 0 3px 3px 0;
-  background-color: #d9d9d9;
-  border-color: #d9d9d9;
-  color: #fff;
-  cursor: pointer;
-}
-.me_searchBox button img {
-  height: 20px;
-  width: auto;
-  transform: translateY(2px);
-}
-.me_searchBox button::placeholder {
-  font-style: italic;
-}
-.me_searchBox .searchLabel {
-  display: none;
-}
-
-.mListItem {
-  width: 100%;
-  border-bottom: 1px solid #e6e6e6;
-  padding-top: 0.5rem;
-  padding-bottom: 1rem;
-}
-.mListItem .mListItem__inner {
-  max-width: 650px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.mListItem .mListItem__inner h2 {
-  font-size: 17px;
-  margin-bottom: 0.3rem;
-}
-.mListItem .mListItem__inner h2 a {
-  color: #1a1a1a;
-}
-
 a {
   color: #1b4593;
 }
@@ -836,7 +787,7 @@ body {
 }
 
 .mButtonClean {
-  background: none;
+  background-color: none;
   border: 0px;
   padding: 0;
   cursor: pointer;
