@@ -119,7 +119,7 @@
                     $xpath = new DOMXPath($DOM);
                     $someclass_elements = $xpath->query('//'.$value);
 
-                    if ($value == 'dl') {
+                    if ($value == 'dl' && !is_null($someclass_elements[0])) {
                       foreach ($someclass_elements[0]->childNodes as $node) {
                         if ($node->nodeName == 'dt') {
                           echo '<div><span class="mTextGrey">'.ucfirst($node->textContent).'</span>: ';
