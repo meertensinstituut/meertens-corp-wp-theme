@@ -8,7 +8,7 @@
       <?php transl( 'Telefoon', 'Telephone') ?>: 020 462 85 00<br>
       <a href="/2007/02/23/bereikbaarheid/">Email</a><br>
       <br>
-      <a href="https://www.knaw.nl/privacy" target="_blank">Privacy statement</a>
+      <?php transl( '<a href="https://meertens.knaw.nl/2018/06/13/privacyverklaring/">Privacyverklaring</a><br><a href="https://meertens.knaw.nl/over-het-meertens-instituut/informatie-opvragen-onder-de-wet-open-overheid-woo/">Wet open overheid</a><br><a href="https://meertens.knaw.nl/2018/11/21/disclaimer/">Disclaimer</a>', '<a href="https://meertens.knaw.nl/en/2023/04/05/privacy-policy/">Privacy Policy</a><br><a href="https://meertens.knaw.nl/en/requesting-information-via-woo/">Requesting Information (via Woo)</a><br><a href="https://meertens.knaw.nl/en/2018/11/21/disclaimer_eng_/">Disclaimer</a>') ?>
       <br><br>
       <a href="https://twitter.com/meertens_knaw" target="_blank"><span class="mIcon"><img src="<?php bloginfo('template_url'); ?>/images/icon-tw.png" alt="Volg ons op Twitter"></span></a>
       <a href="https://www.facebook.com/MeertensInstituut" target="_blank"><span class="mIcon"><img src="<?php bloginfo('template_url'); ?>/images/icon-fb.png" alt="Volg ons op Facebook"></span></a>
